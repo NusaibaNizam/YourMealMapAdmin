@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#c2dadada"
+    android:orientation="vertical"
+    app:behavior_peekHeight="40dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bluish_gray"
+        android:gravity="center"
+        android:text="Pull Up For Restaurants"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/rest_ibtn"
+        android:layout_width="300dp"
+        android:onClick="nearBy"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:src="@drawable/ic_restaurant_black_24dp"
+            android:tint="@color/skyBlue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="Find Restaurants"
+            android:textColor="@color/darkSky"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

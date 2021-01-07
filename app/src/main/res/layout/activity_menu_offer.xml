@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuOfferActivity">
+    <EditText
+        android:id="@+id/menuNameET"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Menu Item Name"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/portionET"
+        android:layout_toRightOf="@id/menuNameET"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:hint="Portion"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/priceET"
+        android:layout_toRightOf="@id/portionET"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:hint="Price"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/menuPhotoBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add photo"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/white"
+        android:layout_below="@id/portionET"
+        android:layout_margin="10dp"
+        android:onClick="addMenuPhoto"/>
+    <Button
+        android:id="@+id/addMenuBT"
+        android:layout_toRightOf="@id/menuPhotoBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Menu Item"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/portionET"
+        android:layout_margin="10dp"
+        android:onClick="addMenuItem"/>
+    <EditText
+        android:id="@+id/offerET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuPhotoBT"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Offer"/>
+    <Button
+        android:id="@+id/offerBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Offer"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/offerET"
+        android:layout_margin="10dp"
+        android:onClick="addOffer"/>
+
+    <TextView
+        android:layout_below="@id/offerBT"
+        android:id="@+id/errorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorError"
+        android:text="An Error Has Occurred"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+    <ProgressBar
+        android:layout_below="@id/errorTV"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

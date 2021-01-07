@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Your Email Address"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        />
+    <EditText
+        android:id="@+id/passET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Your Password"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        />
+    <EditText
+        android:id="@+id/conPassET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        />
+    <Button
+        android:id="@+id/enterBT"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="20dp"
+        android:onClick="register"/>
+    <TextView
+        android:id="@+id/alreadyRegisteredTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Registered?"
+        android:onClick="changeToLogin"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/forgetTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Forgot Password?"
+        android:onClick="forgotPassword"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/errorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorError"
+        android:text="An Error Has Occurred"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

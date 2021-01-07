@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRestaurantActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/restaurantNameET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Restaurant Name"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:onClick="selectRestaurant"
+        />
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textColorHint="@color/colorPrimary"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:textColor="@color/colorPrimary"
+        />
+    <Button
+        android:id="@+id/selectBT"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:text="Select Restaurant From Map"
+        android:onClick="selectRestaurantMap"
+        android:layout_marginBottom="10dp"
+        /><Button
+        android:id="@+id/photoBT"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:text="Add Photo"
+        android:onClick="addPhoto"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/resBT"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="Add Restaurant"
+        android:onClick="addRestaurant"
+        />
+    <Button
+        android:id="@+id/menuBT"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:text="Add Menu And Offers"
+        android:onClick="addMenu"
+        />
+    <TextView
+        android:id="@+id/errorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorError"
+        android:text="An Error Has Occurred"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

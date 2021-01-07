@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/place_nameTV"
+            android:layout_marginLeft="0dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="1dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingBottom="25dp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_below="@id/place_nameTV"
+            android:id="@+id/openTV"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:paddingBottom="25dp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_below="@id/place_nameTV"
+            android:id="@+id/offerTV"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"
+            android:paddingBottom="25dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0084"
+            android:text="Offer Available! "
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/checkedIV"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_done_all_black_24dp"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

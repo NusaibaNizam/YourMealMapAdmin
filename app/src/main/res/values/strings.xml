@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaurant Location Tracker Admin</string>
+    <string name="Map_api"> AIzaSyAmt0D2ebXmqspo33UOtdGDl0pJUqocNEE </string>
+    <string name="google_near_by_places_api"> AIzaSyAAc2rX7Bv9aLLYyE9qT2QYji5oK_RwKL8 </string>
+    <string-array name="choices">
+        <item>By Name</item>
+        <item>By Phone</item>
+    </string-array>
+</resources>
